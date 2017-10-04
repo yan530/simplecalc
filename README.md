@@ -11,7 +11,7 @@ a few tests, as well.
     git clone https://bitbucket.org/TedNeward/uw-ios-simplecalc simplecalc
 
 This will create a local copy of the project. However, in order to *store* your changes to your own
-GitHub account, you need to create a new repository on GitHub (call it simplecalc again), and then
+GitHub account, you need to create a new repository on GitHub (call it `simplecalc`), and then
 change the project's settings to point to that new repository as the remote origin.
 
     git remote set-url origin https://github.com/[your-ID]/simplecalc.git
@@ -93,18 +93,22 @@ Two options are available to you to earn extra points:
 * Modify the Calculator to work on floating-point numbers. (1 point)
 * Modify the main.swift code to accept command-line arguments and if present, don't display a prompt
   and simply process the parameters passed. (1 point) 
-  So, for example, if the user typed "calc 1 + 2", the program would simply print "3". If the user 
-  typed "calc 1 2 3 4 5 count", the program would print
-  "5". And so on. To run your application from the command-line, go to the Project navigator, select
-  "SimpleCalc" *under the Products node* with the mouse, and copy-to-the-clipboard the "Full Path" 
-  text displayed in the "Identity and Type" window to the far right. (Or you can click the "arrow"
-  just to the right of that path, but that simply opens a Finder window to that directory; you will
-  want the path on the clipboard so you can use it from a Terminal.) Now open a Terminal, and type
-  the full path to run the application from the command-line. So on my machine, that looks something
-  like this:
-  
-      /Users/ted/Library/Developer/Xcode/DerivedData/SimpleCalc-aunbkhtoyvtwlqehsvhnekzqnpjx/Build/Products/Debug/SimpleCalc
-      
-  How incredibly intuitive, yes (he said, sarcastically)? It is possible to change this default
-  directory where XCode puts its builds, but for our purposes, it's not important.
+
+The last bit deserves further explanation. For example, if the user typed "SimpleCalc 1 + 2" into a
+Terminal window, the program would print "3". If the user typed "SimpleCalc 1 2 3 4 5 count", the program 
+would print "5". And so on.
+
+To run your application from the command-line, go to the Project navigator, select
+"SimpleCalc" *under the Products node* with the mouse, and copy-to-the-clipboard the "Full Path" 
+text displayed in the "Identity and Type" window to the far right. (Or you can click the "arrow"
+just to the right of that path, but that simply opens a Finder window to that directory; you will
+want the path on the clipboard so you can use it from a Terminal.) Now open a Terminal, and type
+the full path to run the application from the command-line. So on my machine, that looks something
+like this:
+
+  `/Users/ted/Library/Developer/Xcode/DerivedData/SimpleCalc-aunbkhtoyvtwlqehsvhnekzqnpjx/Build/Products/Debug/SimpleCalc`
+
+How incredibly intuitive, yes (he said, sarcastically)? It is possible to change this default
+directory where XCode puts its builds, but for our purposes, it's not important.
+
 
