@@ -46,11 +46,11 @@ in there.
 
 You should make sure your `calculate` method can handle the following kinds of input:
 
-* calculate(["2", "+", "2"]): This should return 4
-* calculate(["2", "-", "2"]): This should return 0
-* calculate(["2", "/", "2"]): This should return 1
-* calculate(["2", "%", "2"]): This should return 0
-* calculate(["2", "*", "2"]): This should return 4
+* `calculate(["2", "+", "2"])`: This should return 4
+* `calculate(["2", "-", "2"])`: This should return 0
+* `calculate(["2", "/", "2"])`: This should return 1
+* `calculate(["2", "%", "2"])`: This should return 0
+* `calculate(["2", "*", "2"])`: This should return 4
 
 For those who aren't aware of it, the "%" operator is called the "modulo" operator, and it is the
 "remainder" result in an integer division that does not divide equally. Thus, 5 % 2 is 1 (5 divided
@@ -59,16 +59,16 @@ by 2 is 2 remainder 1), 10 % 3 is 1 (10 divided by 3 is 3 remainder 1) and 4 % 2
 
 The `calculate` method also needs to support a few other less-traditional expressions as well:
 
-* calculate(["1", "2", "3", "4", "5", "count"]): This should return a count of all the number arguments,
+* `calculate(["1", "2", "3", "4", "5", "count"])`: This should return a count of all the number arguments,
   which in this case will be 5.
-* calculate(["1", "2", "3", "avg"]): This should return the average of the numbers, which is all of the
+* `calculate(["1", "2", "3", "avg"])`: This should return the average of the numbers, which is all of the
   values added up and divided by the number of arguments ( (1 + 2 + 3) / 3 in this case).
-* calculate(["5", "fact"]): This should calculate the factorial of the single number passed in, which
+* `calculate(["5", "fact"])`: This should calculate the factorial of the single number passed in, which
   is that number multiplied by each number below it. 5-factorial is 5 * 4 * 3 * 2 * 1, or 120.
   
 For this latter set of operations, it is safe to assume that ["count"] is 0 (no arguments),
-["avg"] is also 0, and ["fact"] is 0. ["1", "fact"] should also return 1, and ["0", "fact"] should
-also return 1.
+["avg"] is also 0, and ["fact"] is 0. ["1", "fact"] should return 1, and ["0", "fact"] should
+also return 1. (Yes, 0-factorial is 1. True story.)
 
 The unit tests in the project should be testing for all these edge cases already. If the tests all
 pass, you will get full marks.
@@ -92,8 +92,9 @@ Two options are available to you to earn extra points:
 * Modify the Calculator to work on negative numbers. (1 point)
 * Modify the Calculator to work on floating-point numbers. (1 point)
 * Modify the main.swift code to accept command-line arguments and if present, don't display a prompt
-  and simply process the parameters passed. So, for example, if the user typed "calc 1 + 2", the
-  program would simply print "3". If the user typed "calc 1 2 3 4 5 count", the program would print
+  and simply process the parameters passed. (1 point) 
+  So, for example, if the user typed "calc 1 + 2", the program would simply print "3". If the user 
+  typed "calc 1 2 3 4 5 count", the program would print
   "5". And so on. To run your application from the command-line, go to the Project navigator, select
   "SimpleCalc" *under the Products node* with the mouse, and copy-to-the-clipboard the "Full Path" 
   text displayed in the "Identity and Type" window to the far right. (Or you can click the "arrow"
