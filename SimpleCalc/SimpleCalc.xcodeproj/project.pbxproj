@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F6C7D0A1F84A9CD00D7E1F5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C7D091F84A9CD00D7E1F5 /* main.swift */; };
+		53E44AE621EE5D9600E54C56 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C7D091F84A9CD00D7E1F5 /* main.swift */; };
 		9F6C7D171F84A9E700D7E1F5 /* SimpleCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C7D161F84A9E700D7E1F5 /* SimpleCalcTests.swift */; };
 		9F6C7D1C1F84ADEC00D7E1F5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C7D091F84A9CD00D7E1F5 /* main.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		53E44AEB21EE9EF600E54C56 /* calc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calc.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6C7D061F84A9CD00D7E1F5 /* SimpleCalc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SimpleCalc; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6C7D091F84A9CD00D7E1F5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9F6C7D141F84A9E700D7E1F5 /* SimpleCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +34,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		53E44AE821EE9EF600E54C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F6C7D031F84A9CD00D7E1F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +72,7 @@
 			children = (
 				9F6C7D061F84A9CD00D7E1F5 /* SimpleCalc */,
 				9F6C7D141F84A9E700D7E1F5 /* SimpleCalcTests.xctest */,
+				53E44AEB21EE9EF600E54C56 /* calc.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +97,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		53E44AEA21EE9EF600E54C56 /* calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53E44AF021EE9EF600E54C56 /* Build configuration list for PBXNativeTarget "calc" */;
+			buildPhases = (
+				53E44AE721EE9EF600E54C56 /* Sources */,
+				53E44AE821EE9EF600E54C56 /* Frameworks */,
+				53E44AE921EE9EF600E54C56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = calc;
+			productName = calc;
+			productReference = 53E44AEB21EE9EF600E54C56 /* calc.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9F6C7D051F84A9CD00D7E1F5 /* SimpleCalc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F6C7D0D1F84A9CD00D7E1F5 /* Build configuration list for PBXNativeTarget "SimpleCalc" */;
@@ -128,10 +154,14 @@
 		9F6C7CFE1F84A9CD00D7E1F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Neward & Associates";
 				TargetAttributes = {
+					53E44AEA21EE9EF600E54C56 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
 					9F6C7D051F84A9CD00D7E1F5 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -156,11 +186,19 @@
 			targets = (
 				9F6C7D051F84A9CD00D7E1F5 /* SimpleCalc */,
 				9F6C7D131F84A9E700D7E1F5 /* SimpleCalcTests */,
+				53E44AEA21EE9EF600E54C56 /* calc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		53E44AE921EE9EF600E54C56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F6C7D121F84A9E700D7E1F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,11 +209,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		53E44AE721EE9EF600E54C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F6C7D021F84A9CD00D7E1F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6C7D0A1F84A9CD00D7E1F5 /* main.swift in Sources */,
+				53E44AE621EE5D9600E54C56 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +236,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		53E44AF121EE9EF600E54C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = calc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = calc.calc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		53E44AF221EE9EF600E54C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = calc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = calc.calc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		9F6C7D0B1F84A9CD00D7E1F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -205,6 +283,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -212,6 +291,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -220,7 +300,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -262,6 +342,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -269,6 +350,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -277,7 +359,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -348,6 +430,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		53E44AF021EE9EF600E54C56 /* Build configuration list for PBXNativeTarget "calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53E44AF121EE9EF600E54C56 /* Debug */,
+				53E44AF221EE9EF600E54C56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9F6C7D011F84A9CD00D7E1F5 /* Build configuration list for PBXProject "SimpleCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
